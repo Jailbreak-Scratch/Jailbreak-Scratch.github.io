@@ -5,8 +5,8 @@ theme = "uBlogger"
 
 [params]
   version = "2.0.X"
-
-[params.page.share]
+  [params.page]
+	[params.page.share]
       enable = true
       Twitter = true
       Facebook = true
@@ -36,8 +36,8 @@ theme = "uBlogger"
       Trello = false
       Mix = false
 
-    [params.comment]
-      enable = true
+  [params.comment]
+    enable = true
 	  
 	  [params.comment.utterances]
         enable = true
