@@ -71,3 +71,14 @@ theme = "uBlogger"
         label = "comments"
         lightTheme = "github-light"
         darkTheme = "github-dark"
+	
+	[params.search]
+		enable = true
+		type = "lunr"
+		contentLength = 4000
+		placeholder = "Search!"
+		maxResultLength = 10
+		snippetLength = 30
+		absoluteURL = false
+	[params.verification]
+		google = "qo6WnRYfvYXiLpeYmO018wxIK_ht5aDC-15wKcIe7NQ"

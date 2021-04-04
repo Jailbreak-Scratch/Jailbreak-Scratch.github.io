@@ -7,6 +7,10 @@ comment:
 hiddenFromHomePage: true
 ---
 
-![Map1](/images/Map1.webp)
+![Map 1](/images/Map1.webp)
 
 Regular Map
+
+![Main Building 1](/images/Main-Building-Map1.webp)
+
+Main Building
