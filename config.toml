@@ -82,3 +82,20 @@ theme = "uBlogger"
 		absoluteURL = false
 	[params.verification]
 		google = "qo6WnRYfvYXiLpeYmO018wxIK_ht5aDC-15wKcIe7NQ"
+	
+	[params.footer]
+		enable = true
+		# uBlogger NEW | 0.2.0 Custom content (HTML format is supported)
+		custom = '<div id="wcb" class="carbonbadge"></div><script src="https://unpkg.com/website-carbon-badges@1.1.1/b.min.js" defer></script>'
+		# uBlogger NEW | 0.2.0 whether to show Hugo and theme info
+		hugo = true
+		# uBlogger NEW | 0.2.0 whether to show copyright info
+		copyright = false
+		# uBlogger NEW | 0.2.0 whether to show the author
+		author = true
+		# Site creation time
+		since = 2019
+		# ICP info only in China (HTML format is supported)
+		icp = ""
+		# license info (HTML format is supported)
+		license = 'GNUv3'
