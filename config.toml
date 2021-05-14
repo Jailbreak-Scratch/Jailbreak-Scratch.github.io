@@ -76,9 +76,10 @@ theme = "uBlogger"
 		enable = true
 		type = "lunr"
 		contentLength = 4000
-		placeholder = "Search!"
+		placeholder = ""
 		maxResultLength = 10
 		snippetLength = 30
+		highlightTag = "em"
 		absoluteURL = false
 	[params.verification]
 		google = "qo6WnRYfvYXiLpeYmO018wxIK_ht5aDC-15wKcIe7NQ"

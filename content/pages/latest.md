@@ -11,6 +11,6 @@ hiddenFromHomePage: true
 
 Regular Map
 
-![Main Building 1](/images/Main-Building-Map3.webp)
+![Main Building 1](/images/Main-Building-Map4.webp)
 
 Main Building
