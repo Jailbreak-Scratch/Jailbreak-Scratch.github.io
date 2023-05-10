@@ -100,3 +100,6 @@ theme = "uBlogger"
 		icp = ""
 		# license info (HTML format is supported)
 		license = 'GNUv3'
+
+[markup.goldmark.renderer]
+  unsafe = true

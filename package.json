@@ -6,6 +6,6 @@
 		"buildTags": "extended"
 	},
 	"scripts": {
-		"build": "hugo --minify"
+		"build": "hugo --minify --gc"
 	}
 }
