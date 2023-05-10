@@ -29,10 +29,8 @@ jobs:
         uses: actions/configure-pages@v3
         
       - name: Restore and Setup Cache
-        uses: actions/cache@v3
-        with:
-          path: node-modules
-          key: ${{ runner.os }}-npm
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
         
       - name: Install Node.js dependencies
         run: npm install
