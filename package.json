@@ -2,11 +2,9 @@
 	"devDependencies": {
 		"hugo-bin": "^0.102.0"
 	},
-	
 	"hugo-bin": {
 		"buildTags": "extended"
 	},
-	
 	"scripts": {
 		"build": "hugo --minify"
 	}

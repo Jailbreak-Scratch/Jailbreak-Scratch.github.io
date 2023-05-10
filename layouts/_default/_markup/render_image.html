@@ -1,0 +1,41 @@
+<!-- Page assets -->
+{{- $img := .Page.Resources.GetMatch .Destination -}}
+{{- if and (not $img) .Page.File -}}
+{{ $path := path.Join .Page.File.Dir .Destination }}
+{{- $img = resources.Get $path -}}
+{{- end -}}
+
+<!-- Global assets -->
+{{- if (not $img)  -}}
+{{- $img = resources.GetMatch .Destination -}}
+{{- end -}}
+
+<figure>
+    <picture>
+    {{- with $img -}}
+        {{- $imageFallback:= $img.Resize "1400x" -}}
+		{{- $imageXXXXXL:= $img.Resize "4000x webp" -}}
+		{{- $imageXXXXL:= $img.Resize "3200x webp" -}}
+		{{- $imageXXXL:= $img.Resize "2600x webp" -}}
+		{{- $imageXXL:= $img.Resize "2000x webp" -}}
+        {{- $imageXL:= $img.Resize "1400x webp" -}}
+        {{- $imageLG:= $img.Resize "1000x webp" -}}
+        {{- $imageMD:= $img.Resize "800x webp" -}}
+        {{- $imageSM:= $img.Resize "600x webp" -}}
+        <source srcset="{{ $imageSM.RelPermalink }}" media="(max-width: 600px)">
+        <source srcset="{{ $imageMD.RelPermalink }}" media="(max-width: 800px)">
+        <source srcset="{{ $imageLG.RelPermalink }}" media="(max-width: 1000px)">
+		<source srcset="{{ $imageXL.RelPermalink }}" media="(max-width: 1400px)">
+		<source srcset="{{ $imageXXL.RelPermalink }}" media="(max-width: 2000px)">
+		<source srcset="{{ $imageXXXL.RelPermalink }}" media="(max-width: 2600px)">
+		<source srcset="{{ $imageXXXXL.RelPermalink }}" media="(max-width: 3200px)">
+		<source srcset="{{ $imageXXXXXL.RelPermalink }}" media="(max-width: 4000px)">
+        <source srcset="{{ $imageXXXXXL.RelPermalink }}">
+        <img loading="lazy" decoding="async" src="{{$imageFallback.RelPermalink}}" alt="{{ $.Text }}">
+    {{- else -}}
+        <img loading="lazy" decoding="async" src="{{ .Destination | safeURL }}" alt="{{ $.Text }}" />
+    {{- end -}}
+    </picture>
+    
+    <figcaption>{{ with $.Title | safeHTML }}{{ . }}{{ end }}</figcaption>
+</figure>
