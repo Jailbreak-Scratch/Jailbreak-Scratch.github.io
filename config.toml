@@ -1,4 +1,4 @@
-baseURL = "https://jailbreak-scratch.github.io"
+baseURL = "https://Jailbreak-Scratch.github.io"
 languageCode = "en-us"
 title = "Jailbreak Scratch!"
 theme = "uBlogger"
@@ -66,7 +66,7 @@ theme = "uBlogger"
 	  [params.comment.utterances]
         enable = true
         # owner/repo
-        repo = "Jailbreak-Scratch/site-dev"
+        repo = "Jailbreak-Scratch/Jailbreak-Scratch.github.io"
         issueTerm = "pathname"
         label = "comments"
         lightTheme = "github-light"
