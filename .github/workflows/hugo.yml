@@ -35,6 +35,9 @@ jobs:
       - name: Install Node.js dependencies
         run: npm install
         
+      - name: Download images
+        run: npm run dl-images
+        
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
