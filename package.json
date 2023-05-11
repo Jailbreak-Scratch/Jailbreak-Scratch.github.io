@@ -6,6 +6,7 @@
 		"buildTags": "extended"
 	},
 	"scripts": {
-		"build": "hugo --minify --gc"
+		"build": "hugo --minify --gc",
+		"dl-images": "git clone https://github.com/Jailbreak-Scratch/images-4000x ./images/4000x && git clone https://github.com/Jailbreak-Scratch/images-3400x ./images/3400x && git clone https://github.com/Jailbreak-Scratch/images-2600x ./images/2600x && git clone https://github.com/Jailbreak-Scratch/images-2000x ./images/2000x && git clone https://github.com/Jailbreak-Scratch/images-1400x ./images/1400x && git clone https://github.com/Jailbreak-Scratch/images-1000x ./images/1000x && git clone https://github.com/Jailbreak-Scratch/images-600x ./images/600x && git clone https://github.com/Jailbreak-Scratch/images-original ./images/originals"
 	}
 }
